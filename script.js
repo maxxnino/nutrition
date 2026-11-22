@@ -24,8 +24,8 @@ const FOODS = [
     { id: "spinach-raw", name: "Spinach, raw", category: "Vegetables", nutritionPer100g: { calories: 23, protein: 2.9, fat: 0.4, carbs: 3.6, potassium: 558, magnesium: 79, calcium: 99, zinc: 0.5, iron: 2.7, copper: 0.13 } },
     { id: "broccoli-cooked", name: "Broccoli, cooked", category: "Vegetables", nutritionPer100g: { calories: 35, protein: 2.4, fat: 0.4, carbs: 7.2, potassium: 293, magnesium: 21, calcium: 40, zinc: 0.4, iron: 0.7, copper: 0.05 } },
     { id: "avocado", name: "Avocado", category: "Vegetables", nutritionPer100g: { calories: 160, protein: 2, fat: 14.7, carbs: 8.5, potassium: 485, magnesium: 29, calcium: 12, zinc: 0.6, iron: 0.6, copper: 0.19 } },
-    { id: "cashew", name: "Cashew", category: "Nuts & seeds", nutritionPer100g: { calories: 553, protein: 18.22, fat: 43.85, carbs: 30.19, potassium: 660, magnesium: 292, calcium: 37, zinc: 0.6, iron: 0.7, copper: 0.2 } },
-    { id: "natto", name: "Natto", category: "Plant protein", nutritionPer100g: { calories: 212, protein: 18, fat: 11, carbs: 14, potassium: 729, magnesium: 115, calcium: 217, zinc: 0.3, iron: 0.9, copper: 0.1 } },
+    { id: "cashew", name: "Cashew", category: "Nuts & seeds", nutritionPer100g: { calories: 574, protein: 15, fat: 46, carbs: 33, potassium: 565, magnesium: 260, calcium: 45, zinc: 6, iron: 6, copper: 2 } },
+    { id: "natto", name: "Natto", category: "Plant protein", nutritionPer100g: { calories: 212, protein: 18, fat: 11, carbs: 14, potassium: 729, magnesium: 115, calcium: 217, zinc: 3, iron: 9, copper: 1 } },
 ];
 
 /* ========== 2. NUTRIENTS & DEFAULT TARGETS ========== */
