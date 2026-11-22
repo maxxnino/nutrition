@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Nutrition Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Today's nutrition</h1>
+    <p id="today-label" class="muted"></p>
+  </header>
+
+  <main class="layout">
+    <section class="card" id="dashboard-section" aria-labelledby="dash-h">
+      <h2 id="dash-h">Dashboard</h2>
+      <div id="dashboard" class="dash"></div>
+    </section>
+
+    <div class="col">
+      <section class="card" aria-labelledby="add-h">
+        <h2 id="add-h">Add food</h2>
+        <label for="food-search">Search foods</label>
+        <input id="food-search" type="search" placeholder="Type to filter, e.g. rice" autocomplete="off">
+        <label for="food-select" class="sr-only">Matching foods</label>
+        <select id="food-select" size="6"></select>
+        <p id="no-match" class="muted" hidden>No foods match your search.</p>
+        <div class="add-row">
+          <div>
+            <label for="food-qty">Quantity (g)</label>
+            <input id="food-qty" type="number" inputmode="decimal" min="0" step="any" value="100">
+          </div>
+          <button id="add-btn" type="button" class="primary">Add food</button>
+        </div>
+        <p id="add-error" class="error" role="alert" hidden></p>
+      </section>
+
+      <section class="card" aria-labelledby="log-h">
+        <div class="head-row">
+          <h2 id="log-h">Today's log</h2>
+          <button id="clear-btn" type="button" class="ghost danger">Clear today's log</button>
+        </div>
+        <ul id="log" class="log"></ul>
+        <p id="log-empty" class="muted">Nothing logged yet. Pick a food above and add it.</p>
+      </section>
+    </div>
+
+    <section class="card" aria-labelledby="set-h">
+      <div class="head-row">
+        <h2 id="set-h">Daily targets</h2>
+        <button id="reset-btn" type="button" class="ghost">Restore defaults</button>
+      </div>
+      <div id="targets" class="targets"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
